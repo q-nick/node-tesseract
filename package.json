@@ -1,0 +1,28 @@
+{
+  "name": "node-tesseract",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "configure": "node-gyp configure",
+    "build": "node-gyp build",
+    "download-libs": "git clone https://github.com/tesseract-ocr/tesseract.git libs/tesseract && git clone https://github.com/DanBloomberg/leptonica.git libs/leptonica",
+    "compile-libs": "cd libs/tesseract && cmake .",
+    "all": "npm run configure && npm run build"
+  },
+  "gypfile": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/q-nick/node-tesseract.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/q-nick/node-tesseract/issues"
+  },
+  "homepage": "https://github.com/q-nick/node-tesseract#readme",
+  "devDependencies": {
+    "node-gyp": "^3.6.2"
+  }
+}
