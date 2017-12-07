@@ -7,8 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "configure": "node-gyp configure",
     "build": "node-gyp build",
-    "download-libs": "git clone https://github.com/tesseract-ocr/tesseract.git libs/tesseract && git clone https://github.com/DanBloomberg/leptonica.git libs/leptonica",
-    "compile-libs": "cd libs/tesseract && cmake .",
     "all": "npm run configure && npm run build"
   },
   "gypfile": true,

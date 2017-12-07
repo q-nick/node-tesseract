@@ -9,7 +9,7 @@
       'include_dirs': [
       ],
       'libraries': [
-        '-llibtesseract',
+        '-lpvt.cppan.demo.google.tesseract.libtesseract',
         '-lleptonica'
       ]
     }
