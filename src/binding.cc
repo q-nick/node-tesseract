@@ -1,7 +1,7 @@
 #include <node.h>
 #include <v8.h>
 // #include <tesseract/baseapi.h>
-#include <leptonica/allheaders.h>
+// #include <leptonica/allheaders.h>
 
 void Method(const v8::FunctionCallbackInfo<v8::Value>& args) {
   v8::Isolate* isolate = args.GetIsolate();
